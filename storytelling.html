@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Storytelling</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        height: 100%;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .storytelling {
+        position: relative;
+        color: white;
+        text-align: center;
+      }
+
+      .storytelling__photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .storytelling__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%; /* Adjusted to make sure the text doesn't overflow */
+        max-width: 600px;
+        padding: 20px;
+        background: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Optional: Adds a dark overlay behind the text for better readability */
+        border-radius: 10px;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      p {
+        margin: 10px 0 0;
+        font-size: 1.2rem;
+      }
+
+      /* Responsive text sizes */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="storytelling">
+          <div class="storytelling__photo">
+            <img
+              src="simple-background-robot-digital-art-machine-wallpaper-preview.jpg"
+              alt="storytelling"
+            />
+          </div>
+          <div class="storytelling__text">
+            <h1>Storytelling</h1>
+            <p>
+              Artificial intelligence (AI) is a wide-ranging branch of computer
+              science concerned with building smart machines capable of
+              performing tasks that typically require human intelligence.
+            </p>
+            <p>Grow as AI continues to advance.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
